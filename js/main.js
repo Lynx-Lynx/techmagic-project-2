@@ -83,6 +83,7 @@ function addMessage() {
 }
 
 function addMessageAfterKeyPress(event) {
+  if (!inputValidation()) throwAlert("Empty input");
   if (inputValidation() && event.keyCode === 13) {
     addMessage();
   }
