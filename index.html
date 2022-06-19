@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>JS Queue</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__title">
+          <div class="container">
+            <h1 class="header__text">
+              Queue of wishes for our 'neighbour dearest'
+            </h1>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <h2 class="main__header">
+            We all would love to write a few gentle words to a certain notorious
+            someone.
+          </h2>
+          <div class="main__img">
+            <img class="putler-img" src="img/h.webp" alt="hl" />
+          </div>
+          <div class="main__content">
+            <p>Imagine that it is actually possible. What would you say?</p>
+            <p>
+              Here we have a queue of short letters (maximum 50 characters) that
+              are sent [possibly, by war geese] one at a time when the number of
+              letters goes over 10.
+            </p>
+            <p>
+              Write anything to your liking into the input field and press the
+              'Enter' button / 'Enter' key.
+            </p>
+          </div>
+          <div class="main__input">
+            <input
+              class="textinput"
+              type="text"
+              maxlength="50"
+              placeholder="write something..."
+              required
+            />
+            <div class="alert alert--visible"></div>
+          </div>
+          <div class="main__buttons">
+            <div class="main__btn-enter">
+              <button class="enter btn">Enter</button>
+            </div>
+            <div class="main__btn-remove">
+              <button class="remove btn">Remove</button>
+            </div>
+            <div class="main__btn-reset">
+              <button class="reset btn">Reset</button>
+            </div>
+          </div>
+          <div class="main__letters"></div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__text">Hello, I am the footer</div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

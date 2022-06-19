@@ -1,0 +1,154 @@
+body {
+  font-family: "Indie Flower", cursive;
+  background-color: #e8e6e7;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.alert {
+  display: none;
+}
+
+.alert--visible {
+  display: block;
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.header__title {
+  padding: 20px 0;
+  background-color: #d6b8be;
+  margin-bottom: 20px;
+}
+
+.header__text {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.main__header {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.main__content p:first-child {
+  font-size: 2.5rem;
+  color: #d6b8be;
+  margin-bottom: 10px;
+}
+
+.main__content {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.main__input {
+  margin-bottom: 20px;
+}
+
+.main__img {
+  margin-bottom: 10px;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.putler-img {
+  border-radius: 50%;
+  height: 100px;
+  animation: rotate 6s linear infinite;
+}
+
+.textinput {
+  width: 50%;
+  height: 50px;
+  padding: 0 0 0 10px;
+}
+
+.textinput:focus::placeholder {
+  color: transparent;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  border-radius: 10%;
+  text-align: center;
+  height: 30px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+.main__buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.reset {
+  margin-right: 0;
+}
+
+.main__letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.main__letter {
+  width: 150px;
+  height: auto;
+  background-color: #d8e0e3;
+  margin: 5px;
+}
+
+.main__letter:first-child {
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.letter-text {
+  padding: 15px;
+  font-size: 1.5rem;
+  overflow-wrap: break-word;
+}
+
+.main__letter:nth-child(even) {
+  background-color: white;
+}
+
+.letter-text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #d6b8be;
+  height: 25px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
