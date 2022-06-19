@@ -107,8 +107,17 @@ body {
   margin-bottom: 20px;
 }
 
+.enter {
+  background-color: #8aba7d;
+}
+
+.remove {
+  background-color: #f59c64;
+}
+
 .reset {
   margin-right: 0;
+  background-color: #f56464;
 }
 
 .main__letters {
