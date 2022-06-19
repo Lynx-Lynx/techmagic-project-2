@@ -83,9 +83,7 @@ function addMessage() {
 }
 
 function addMessageAfterKeyPress(event) {
-  if (inputValidation() && event.keyCode === 13) {
-    addMessage();
-  }
+  if (event.keyCode === 13) addMessage();
 }
 
 ENTER.addEventListener("click", addMessage);
